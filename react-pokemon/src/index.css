@@ -48,5 +48,72 @@ h1 {
     font-size: 0.8rem;
 }
 
+.buscador-pokemon {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.buscador-pokemon input {
+  padding: 12px 20px;
+  width: 350px;
+  border-radius: 30px;
+  border: 2px solid #ed1c24;
+  font-size: 1rem;
+  outline: none;
+}
+
+.buscador-pokemon button {
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ed1c24;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.buscador-pokemon button:hover {
+  transform: scale(1.05);
+  background-color: #cc0000;
+}
+
+.busquedas-previas {
+  margin: 10px 0 30px 0;
+  text-align: center;
+}
+
+.busquedas-previas h3 {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.busquedas-previas-lista {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.busquedas-previas-lista li {
+  background: #f0f0f0;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.2s;
+}
+
+.busquedas-previas-lista li:hover {
+  background: #3b4cca;
+  color: white;
+}
+
 @media (min-width: 768px) { .pokemon-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (min-width: 1024px) { .pokemon-grid { grid-template-columns: repeat(5, 1fr); } }
